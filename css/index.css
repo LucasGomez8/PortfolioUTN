@@ -1,0 +1,35 @@
+
+
+.headerContainer{
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #262626;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 15px 0px black;
+}
+
+.navbar__ul{
+   margin-right: 5em;
+}
+
+.navbar-ul__li{
+    display: inline-block;
+    margin: 15px;
+}
+
+.navbar-ul-li__a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.20em;
+}
+
+
+.sobremiContainer{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
