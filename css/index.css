@@ -5,7 +5,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #262626;
+    background-color: #132B4F; /*#262626;*/
     position: fixed;
     width: 100%;
     box-shadow: 0px 0px 15px 0px black;
@@ -32,4 +32,50 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.sobremi__desc{
+    width: 700px;
+}
+
+.sobremi__desc > h1 {
+    font-size: 2em;
+}
+.sobremi__desc > p {
+    margin-bottom: 6px;
+    font-size: 1.15em;
+    font-weight:500;
+}
+
+.sobremi-img{
+    width: 400px;
+    height: 450px;
+    border-radius: 100%;
+}
+
+.projectosContainer{
+    height: calc(100vh - 75px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectos__titulo{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.projectos__flex{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectos-flex__img{
+    height: 150px;
+    width: 300px;
+}
+
+.projectos-flex__desc{
+    text-align: center;
 }
