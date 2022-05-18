@@ -65,6 +65,7 @@ section{
     width: 100%;
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
 }
 
 .projectos__titulo{
@@ -93,18 +94,25 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 .contacto__titulo{
     font-size: 3em;
 }
 
+.contacto__iconos > h3 {
+    margin-top: 15px;
+}
+
 .contacto__iconos > ul {
+    margin: 27px auto;
     display: grid;
     justify-content: center;
     text-align: center;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 150px 150px 150px;
 }
+
 
 .contacto__iconos > ul > li {
     list-style: none;
@@ -117,4 +125,27 @@ section{
 
 .contacto__iconos > ul > li > a > i {
     font-size: 3em;
+}
+
+.contactoEmail{
+    height: 400px;
+}
+
+.contactoEmail > form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contactoEmail > form > input, textarea {
+    margin-top: 20px;
+    width: 400px;
+}
+
+.contactoEmail > form > button{
+
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    margin: 10px auto;
 }
