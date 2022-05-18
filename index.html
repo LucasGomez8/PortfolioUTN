@@ -29,54 +29,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
-
-
+    
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/a4d1bf1ab5.js" crossorigin="anonymous"></script>
     <title>Lucas Gomez || Personal Portfolio</title>
 </head>
 <body>
+
+    <!-- Navbar -->
     <div class="container">
         <header class="headerContainer">
             <nav class="navbar">
                 <ul class="navbar__ul">
                     <li class="navbar-ul__li"> <a class="navbar-ul-li__a" href="#sobremi">Sobre Mi</a></li>
                     <li class="navbar-ul__li"> <a class="navbar-ul-li__a" href="#projectos">Projectos</a></li>
-                    <li class="navbar-ul__li"> <a class="navbar-ul-li__a" href="">Contacto</a></li>
+                    <li class="navbar-ul__li"> <a class="navbar-ul-li__a" href="#contactos">Contacto</a></li>
                 </ul>
             </nav>
         </header>
 
-<section id="sobremi" class="sobremi">
-    <div class="sobremiContainer">
-        <div class="sobremi__imageCon">
-            <img class="sobremi-img" src="./assets/images/perfil.jpg" alt="fotomiaxd">
-        </div>
-        <div class="sobremi__desc">
-            <h1>Bienvenidos a mi portfolio...</h1>
-            <p>Soy Lucas, actualmente estoy trabajando como Desarrollador Web Junior en el municipio de tigre</p>
-            <p>Cuento con los recursos para poder desenvolverme de forma eficiente en el ambiente laboral, buscando las soluciones optimas sin interrumpir el trabajo en equipo</p>
-            <p>Me gusta charlar, debatir, ver peliculas y tomar café mientras me desenvuelvo en los desarrollos en los que participo</p>
-        </div>
-    </div>
-</section>
+    <!-- Sobre Mi -->        
+        <section id="sobremi" class="sobremi">
+            <div class="sobremiContainer">
+                <div class="sobremi__imageCon">
+                    <img class="sobremi-img" src="./assets/images/perfil.jpg" alt="fotomiaxd">
+                </div>
+                <div class="sobremi__desc">
+                    <h1>Bienvenidos a mi portfolio...</h1>
+                    <p>Soy Lucas, actualmente estoy trabajando como Desarrollador Web Junior en el municipio de tigre</p>
+                    <p>Cuento con los recursos para poder desenvolverme de forma eficiente en el ambiente laboral, buscando las soluciones optimas sin interrumpir el trabajo en equipo</p>
+                    <p>Me gusta charlar, debatir, ver peliculas y tomar café mientras me desenvuelvo en los desarrollos en los que participo</p>
+                </div>
+            </div>
+        </section>
 
-<section  data-aos="fade-up"  data-aos-delay="200" id="projectos" class="projectos">
-    <div class="projectosContainer">
-        <h1 class="projectos__titulo">Mis Projectos</h1>
-        <div data-aos="fade-up" data-aos-delay="800" class="projectos__flex">
-            <a href="https://lucasgomez.vercel.app/">
-                <img class="projectos-flex__img" src="./assets/images/projecto1.png" alt="Imagen Projecto">
-                <p class="projectos-flex__desc">Portfolio Real</p>
-            </a>
+    <!-- Projectos -->
+        <section id="projectos" class="projectos">
+            <div class="projectosContainer">
+                <h1 id="projectosstart" class="projectos__titulo">Mis Projectos</h1>
+                <div data-aos="fade-up" data-aos-delay="800" class="projectos__flex">
+                    <a href="https://lucasgomez.vercel.app/">
+                        <img class="projectos-flex__img" src="./assets/images/projecto1.png" alt="Imagen Projecto">
+                        <p class="projectos-flex__desc">Portfolio Real</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contactoContainer">
+            <h1 id="contactostart" class="contacto__titulo">Contacto</h1>
+            <div class="contacto__iconos">
+                <h3>Podes Encontrarme en las siguientes redes</h3>            
+                    <ul>
+                        <li> 
+                            <a href="">
+                                <i class="fa fa-instagram"></i>
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="">
+                                <i class="fa fa-github"></i>
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="">
+                                <i class="fa fa-linkedin"></i>
+                            </a> 
+                        </li>
+                    </ul>
+            </div>
         </div>
-    </div>
-</section>
-
-<section id="contacto" class="contacto">
-    <div class="contactoContainer">
-        <h1 class="contacto__titulo">Contacto</h1>
-    </div>
-</section>
-
+    </section>
     </div>
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
