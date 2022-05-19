@@ -38,9 +38,8 @@ section{
 }
 
 .navbar-ul-li__a:hover{
-  color:gray;
+  color:#036465;
   font-size: 1.5em;
-  transform: scale(1.7px);
   transition: 1s ease;
 }
 
@@ -66,7 +65,7 @@ section{
 .sobremi__desc > h1 {
     font-size: 2em;
     margin-bottom: 3px;
-    color: darkorange;
+    color: #00AA6F;
 }
 .sobremi__desc > p {
     margin-bottom: 6px;
@@ -97,14 +96,53 @@ section{
     font-weight: 600;
     position: relative;
     top: 0;
-    animation: slides 3s infinite;
+    animation: slides 12s steps(4) infinite;
 }
 
 .sobremi-type__option > li > span {
     position: relative;
     margin: 5px 0;
     line-height: 25px;
+    color: #00AA6F;
 }
+
+.sobremi-type__option li span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid #00AA6F;
+    animation: typing 3s steps(10) infinite;
+    background: #fff;
+}
+
+.btn-container{
+    margin-top: 30px;
+    text-align: center;
+}
+.sobremi__desc button{
+    background: #00AA6F;
+    color: white;
+    border: none;
+    padding: 20px;
+    height: 60px;
+    width: 150px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.sobremi__desc button:hover{
+    transform: scale(1.05);
+    background: linear-gradient(to bottom, #00AA6F, #036465);
+
+}
+
+.sobremi__desc button:active {
+    background: linear-gradient(to bottom, #036465, #00AA6F);
+}
+
 
 /* ====================== */
 
@@ -174,9 +212,6 @@ section{
     transition: 2s ease;
   }
 
-.projectos-flex__desc:hover{
-    color: blue;
-}
 
 /* ====================== */
 
@@ -212,12 +247,22 @@ section{
 
 .contacto__iconos > ul > li {
     list-style: none;
+    transition: 1.2s ease;
 }
 
 .contacto__iconos > ul > li > a {
     text-decoration: none;
     color: black;
 }
+
+.contacto__iconos a:hover {
+    color: #00AA6F;
+}
+.contacto__iconos li:hover{
+    transform: translateY(10px);
+    transition: 1.2s ease;
+}
+
 
 .contacto__iconos > ul > li > a > i {
     font-size: 3em;
@@ -235,15 +280,46 @@ section{
 
 .contactoEmail > form > input, textarea {
     margin-top: 20px;
-    width: 400px;
+    width: 500px;
+    border-radius: 3px;
+    border-bottom: 1px solid #036465;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+.contactoEmail input:focus{
+    background: linear-gradient(to bottom, #fff,#A0E5E5);
+    outline: none;
+}
+
+.contactoEmail textarea:focus{
+    background: linear-gradient(to bottom, #fff,#A0E5E5);
+    outline: none;
 }
 
 .contactoEmail > form > button{
 
     text-align: center;
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 40px;
     margin: 10px auto;
+    background: #00AA6F;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+
+/* ==================== */
+/*Footer*/
+.footer{
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(to right, #00AA6F, #036465);
+    text-align: center;
+    font-size: 20px;
+    color: white;
 }
 
 
@@ -252,6 +328,85 @@ section{
 
 @keyframes slides {
     100%{
-        top: -60px;
+        top: -100px;
     }
+}
+
+@keyframes typing {
+    40%, 60%{
+        left: calc(100% + 3px);
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes selectedIcon {
+    100%{
+        transform: rotate(365deg);
+    }
+}
+
+@keyframes selectedIcon2 {
+    100%{
+        transform: scale(1.1);
+    } 
+}
+
+
+/* ============ */
+/* RESPONSIVE */
+
+@media screen and (max-width:600px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sobremiContainer{
+        margin-top: 100px;
+        flex-direction: column;
+        width: 450px;
+    }
+
+    .sobremi-img{
+        height: 190px;
+        width: 180px;
+    }
+    .sobremi__desc{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sobremi__desc button{
+        height: 40px;
+        width: 120px;
+        padding: 0;
+        font-size: 15px;
+    }
+    .sobremi__type{
+        justify-content: center;
+    }
+
+    .projectosContainer{
+        margin-top: 100px;
+    }
+
+    .contactoContainer{
+        margin-top: 100px;
+    }
+
+    .contactoEmail >form >input, textarea {
+        width: 350px;
+    }
+
+    .footer{
+        margin-top: 50px;
+    }
+    
 }
