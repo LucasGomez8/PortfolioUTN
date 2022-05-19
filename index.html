@@ -18,7 +18,7 @@
         body{
             overflow-x: hidden;
             font-family: 'Source Sans Pro', sans-serif;
-
+            background-image: url("https://www.design.svgbackgrounds.com/wp-content/uploads/2021/05/protruding-squares-orange-background.png");
         }
     </style>
 
@@ -38,7 +38,7 @@
 
     <!-- Navbar -->
     <div class="container">
-        <header class="headerContainer">
+        <header class="headerContainer" data-aos="fade-up" data-aos-delay="600">
             <nav class="navbar">
                 <ul class="navbar__ul">
                     <li class="navbar-ul__li"> <a class="navbar-ul-li__a" href="#sobremi">Sobre Mi</a></li>
@@ -50,12 +50,22 @@
 
     <!-- Sobre Mi -->        
         <section id="sobremi" class="sobremi">
-            <div class="sobremiContainer">
+            <div class="sobremiContainer" data-aos="fade" data-aos-delay="900">
                 <div class="sobremi__imageCon">
                     <img class="sobremi-img" src="./assets/images/perfil.jpg" alt="fotomiaxd">
                 </div>
                 <div class="sobremi__desc">
-                    <h1>Bienvenidos a mi portfolio...</h1>
+                    <h1>Lucas Gomez</h1>
+                    <div class="sobremi__type">
+                        <h3 class="sobremi-type__text">Soy</h3>
+                        <ul class="sobremi-type__option">
+                            <li> <span> Desarrollador Web</span></li>
+                            <li> <span> Desarrollador Front End</span></li>
+                            <li> <span> Persona </span></li>
+                            <li> <span> FullStack? </span></li>
+                            <li> <span> Casi </span></li>
+                        </ul>
+                    </div>
                     <p>Soy Lucas, actualmente estoy trabajando como Desarrollador Web Junior en el municipio de tigre</p>
                     <p>Cuento con los recursos para poder desenvolverme de forma eficiente en el ambiente laboral, buscando las soluciones optimas sin interrumpir el trabajo en equipo</p>
                     <p>Me gusta charlar, debatir, ver peliculas y tomar café mientras me desenvuelvo en los desarrollos en los que participo</p>
@@ -66,11 +76,13 @@
     <!-- Projectos -->
         <section id="projectos" class="projectos">
             <div class="projectosContainer">
-                <h1 id="projectosstart" class="projectos__titulo">Mis Projectos</h1>
-                <div data-aos="fade-up" data-aos-delay="800" class="projectos__flex">
+                <h1 id="projectosstart" class="projectos__titulo" data-aos="fade-up" data-aos-delay="300">Mis Projectos</h1>
+                <div data-aos="fade-down" data-aos-delay="600" class="projectos__flex">
                     <a href="https://lucasgomez.vercel.app/">
-                        <img class="projectos-flex__img" src="./assets/images/projecto1.png" alt="Imagen Projecto">
-                        <p class="projectos-flex__desc">Portfolio Real</p>
+                        <div class="projectos-flex__item">
+                            <img class="projectos-flex__img" src="./assets/images/projecto1.png" alt="Imagen Projecto">
+                            <h3 class="projectos-flex__desc">Portfolio Real</h3>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -79,9 +91,9 @@
     <!-- Contacto -->
     <section id="contacto" class="contacto">
         <div class="contactoContainer">
-            <h1 id="contactostart" class="contacto__titulo">Contacto</h1>
-            <h3>Podes Encontrarme en las siguientes redes</h3>            
-            <div class="contacto__iconos">
+            <h1 id="contactostart" class="contacto__titulo" data-aos="fade-up" data-aos-delay="300">Contacto</h1>
+            <h3 data-aos="fade-up" data-aos-delay="600">Podes Encontrarme en las siguientes redes</h3>            
+            <div class="contacto__iconos"data-aos="fade-up" data-aos-delay="1200">
                     <ul>
                         <li> 
                             <a href="">
@@ -100,7 +112,7 @@
                         </li>
                     </ul>
             </div>
-            <div class="contactoEmail">
+            <div class="contactoEmail"data-aos="fade-up" data-aos-delay="1400">
                 <form action="https://formsubmit.co/932d5286c3f1c118a94c05d9f4468c6e" method="POST">
                     <input type="text" name="name" placeholder="Tu Nombre">
                     <input type="email" name="email" placeholder="Tu Email">
